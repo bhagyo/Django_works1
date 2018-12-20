@@ -3,8 +3,12 @@
    <body>
        <h1>স্বাগতম বাংলায় জ্যাঙ্গো টিউটোরিয়াল এর প্রথম টেমপ্লেট এ </h1>
        <ul>
-       {% for post in post_list %}
-           <li>{{ post.title }}</li>
+        <p>lekh kichu ekta</p>
+       {% for ppost in all_post_list %}
+       <div>
+           <h1>{{ ppost.title }} </h1>
+           <p>{{ ppost.description }}</p>
+        </div>
        {% endfor %}
        </ul>
    </body>
