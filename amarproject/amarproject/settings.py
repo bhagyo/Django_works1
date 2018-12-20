@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog_post',
     'student',
+    'user_info',
 ]
 
 STATICFILES_DIRS = [

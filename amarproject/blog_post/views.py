@@ -16,4 +16,4 @@ def post_list(request):
 def single_post(request, post_id):
     post = Post.objects.get(pk=post_id)
     print(post)
-    return render(request, 'single-post.html', {'post_list': post})
+    return render(request, 'single-post.html', {'post': post})
