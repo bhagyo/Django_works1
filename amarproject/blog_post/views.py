@@ -11,3 +11,9 @@ def home(request):
 def post_list(request):
     all_list = Post.objects.all()
     return render(request, 'all_post.html', {'all_list': all_list})
+
+
+def single_post(request, post_id):
+    post = Post.objects.get(pk=post_id)
+    print(post)
+    return render(request, 'single-post.html', {'post_list': post})

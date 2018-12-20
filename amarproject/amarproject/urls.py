@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from blog_post.views import home
 from student.views import page1
-from blog_post.views import post_list
+from blog_post.views import post_list, single_post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home, name='home'),
     path('page1/', page1, name='page1'),
     path('post-list/', post_list, name='post-list'),
+    path('single-post/<post_id>/', single_post, name='single-post'),
 ]
