@@ -6,3 +6,8 @@ from .models import Post
 def home(request):
     all_post = Post.objects.all()
     return render(request, 'post_list.html', {'all_post_list': all_post})
+
+
+def post_list(request):
+    all_list = Post.objects.all()
+    return render(request, 'all_post.html', {'all_list': all_list})
