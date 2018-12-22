@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog_post',
     'student',
     'user_info',
+    'cost_management'
 ]
 
 STATICFILES_DIRS = [
