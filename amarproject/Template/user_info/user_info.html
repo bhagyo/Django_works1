@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>খরচ খুজুন </h1>
+
+<form action="/user/info/" method="post">
+        {% csrf_token %}
+        তোমার নাম কি ? <input type="text" name="user_name">
+        <input type="submit" value="ঠিক আছে">
+
+</form>
+    {% if name %}
+        <p>আমার ভাই তোমার ভাই,{{name}} ভাই, {{name}}ভাই।{{name}} ভাইয়ের সালাম নিন সইরষা মার্কায় ভোট দিন </p>
+    {% else %}
+        <p>The given string is empty</p>
+    {% endif %}
+{% endblock %}

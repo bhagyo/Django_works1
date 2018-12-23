@@ -5,7 +5,7 @@ from django.db import models
 
 class Expenses(models.Model):
     amount = models.IntegerField()
-    purpose = models.TextField()
+    purpose = models.CharField(max_length=200)
     date = models.DateTimeField()
 
     def __str__(self):
