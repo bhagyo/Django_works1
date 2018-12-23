@@ -8,5 +8,6 @@ urlpatterns = [
     path('page1/', page1, name='page1'),
     path('blog/', include('blog_post.urls'), name='blog'),
     path('mess/', include('cost_management.urls'), name='mess'),
+    path('info/', include('information.urls'), name='info'),
     path('user/', include('user_info.urls'), name='user'),
 ]
